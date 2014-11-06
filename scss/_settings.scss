@@ -117,7 +117,7 @@ $black       : #000000;
 
 // We use these as default colors throughout
 // $primary-color: #65E0CB;
-$primary-color: #EF5745;
+$primary-color: #50E3C2;
 $secondary-color: #65CAE0;
 $wet-asphalt: #34495E;
 $dark-gray: #696969;
@@ -1486,12 +1486,9 @@ $menu-slide: "transform 500ms ease";
 // Projects
 .project_box {
 	float: left;
-	width: 280px;
+	width: 100%;
+	max-width: 400px;
 	height: auto;
-	// margin-top: 20px;
-	// margin-bottom: 20px;
-	margin-left: 10px;
-	margin-right: 10px;
 	&:hover {
 		opacity: 0.5;
 	}
@@ -1505,6 +1502,7 @@ $menu-slide: "transform 500ms ease";
 	.description {
 		color: $medium-gray;
 		text-decoration: none;
+		margin-left: 10px;
 	}
 }
 
@@ -1664,3 +1662,8 @@ $menu-slide: "transform 500ms ease";
 	margin-right: 10%;
 	z-index: 999;
 }
+
+// #fixed-height{
+// 	min-height: 300px;
+// 	margin-bottom: 20px;
+// }
