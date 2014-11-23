@@ -225,6 +225,54 @@
   z-index: 999;
 }
 
+/* line 1672, ../scss/_settings.scss */
+#pic1 {
+  min-height: 400px;
+  background: url(1.jpg) no-repeat center;
+}
+
+/* line 1677, ../scss/_settings.scss */
+#pic2 {
+  min-height: 400px;
+  background: url(2.jpg) no-repeat center;
+}
+
+/* line 1681, ../scss/_settings.scss */
+#pic3 {
+  min-height: 400px;
+  background: url(3.jpg) no-repeat center;
+}
+
+/* line 1685, ../scss/_settings.scss */
+#pic4 {
+  min-height: 400px;
+  background: url(4.jpg) no-repeat center;
+}
+
+/* line 1689, ../scss/_settings.scss */
+#pic5 {
+  min-height: 400px;
+  background: url(5.jpg) no-repeat center;
+}
+
+/* line 1693, ../scss/_settings.scss */
+#pic6 {
+  min-height: 400px;
+  background: url(6.jpg) no-repeat center;
+}
+
+/* line 1697, ../scss/_settings.scss */
+#pic7 {
+  min-height: 400px;
+  background: url(7.jpg) no-repeat center;
+}
+
+/* line 1701, ../scss/_settings.scss */
+#pic8 {
+  min-height: 400px;
+  background: url(8.jpg) no-repeat center;
+}
+
 /* line 347, ../bower_components/foundation/scss/foundation/components/_global.scss */
 meta.foundation-version {
   font-family: "/5.4.6/";
