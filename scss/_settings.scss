@@ -1530,7 +1530,7 @@ $menu-slide: "transform 500ms ease";
 	.bg {
 		position: absolute;
 		z-index: -1000;
-		background: url(bg.jpg) no-repeat center center fixed; 
+		background: url(bg2.jpg) no-repeat center center fixed; 
 		background-color: white;
 	 	-webkit-background-size: cover;
 	 	-moz-background-size: cover;
@@ -1548,9 +1548,19 @@ $menu-slide: "transform 500ms ease";
 		height: 20%;
 		margin-top: -10%;
 		text-align: center;
-		color: $primary-color;
+		color: white;
 		h1, h3 {
 			font-weight: bold;
+			color: white;
+		}
+		a {
+			color:white;
+			&:hover {
+				color: $primary-color;
+			}
+		}
+		.arrow {
+			color: white;
 		}
 		.arrow:hover {
 			-webkit-transition: 1s ease-in-out;
@@ -1562,8 +1572,13 @@ $menu-slide: "transform 500ms ease";
 			-o-transform: translate(0, 1em);
 			-ms-transform: translate(0, 1em);
 			transform: translate(0, 1em);
+			color: $primary-color;
 		}
+		&:hover {
+			color: $primary-color;
+		}	
 	}
+
 }
 
 
@@ -1668,6 +1683,10 @@ $menu-slide: "transform 500ms ease";
 // 	margin-bottom: 20px;
 // }
 
+#pic0 {
+	min-height: 400px;
+	background: url(0.jpg) no-repeat center; 
+}
 
 #pic1 {
 	min-height: 400px;

@@ -90,7 +90,7 @@
 .full-page .bg {
   position: absolute;
   z-index: -1000;
-  background: url(bg.jpg) no-repeat center center fixed;
+  background: url(bg2.jpg) no-repeat center center fixed;
   background-color: white;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -109,13 +109,26 @@
   height: 20%;
   margin-top: -10%;
   text-align: center;
-  color: #50e3c2;
+  color: white;
 }
 /* line 1552, ../scss/_settings.scss */
 .full-page .home-title h1, .full-page .home-title h3 {
   font-weight: bold;
+  color: white;
 }
-/* line 1555, ../scss/_settings.scss */
+/* line 1556, ../scss/_settings.scss */
+.full-page .home-title a {
+  color: white;
+}
+/* line 1558, ../scss/_settings.scss */
+.full-page .home-title a:hover {
+  color: #50e3c2;
+}
+/* line 1562, ../scss/_settings.scss */
+.full-page .home-title .arrow {
+  color: white;
+}
+/* line 1565, ../scss/_settings.scss */
 .full-page .home-title .arrow:hover {
   -webkit-transition: 1s ease-in-out;
   -moz-transition: 1s ease-in-out;
@@ -126,9 +139,14 @@
   -o-transform: translate(0, 1em);
   -ms-transform: translate(0, 1em);
   transform: translate(0, 1em);
+  color: #50e3c2;
+}
+/* line 1577, ../scss/_settings.scss */
+.full-page .home-title:hover {
+  color: #50e3c2;
 }
 
-/* line 1572, ../scss/_settings.scss */
+/* line 1587, ../scss/_settings.scss */
 .tumblr_posts {
   width: 100%;
   position: relative;
@@ -141,7 +159,7 @@
   list-style: none;
   list-style-type: none;
 }
-/* line 1583, ../scss/_settings.scss */
+/* line 1598, ../scss/_settings.scss */
 .tumblr_posts li {
   width: 90%;
   margin-left: auto !important;
@@ -150,26 +168,26 @@
   padding-bottom: 25px !important;
   border-bottom: thin solid #c2c0c0;
 }
-/* line 1590, ../scss/_settings.scss */
+/* line 1605, ../scss/_settings.scss */
 .tumblr_posts li a {
   font-size: 1.6875rem;
   color: dimgray !important;
 }
-/* line 1593, ../scss/_settings.scss */
+/* line 1608, ../scss/_settings.scss */
 .tumblr_posts li a:hover {
   color: #50e3c2 !important;
 }
-/* line 1598, ../scss/_settings.scss */
+/* line 1613, ../scss/_settings.scss */
 .tumblr_posts li .tumblr_description .link_og_blockquote {
   border: none !important;
   color: #c2c0c0 !important;
   margin-bottom: 0px !important;
 }
-/* line 1603, ../scss/_settings.scss */
+/* line 1618, ../scss/_settings.scss */
 .tumblr_posts li .tumblr_description p {
   color: #c2c0c0;
 }
-/* line 1612, ../scss/_settings.scss */
+/* line 1627, ../scss/_settings.scss */
 .tumblr_posts li .tumblr_caption p {
   margin-top: 5px;
   color: #c2c0c0;
@@ -177,31 +195,31 @@
 }
 
 /* remove scroll bars in Safari */
-/* line 1622, ../scss/_settings.scss */
+/* line 1637, ../scss/_settings.scss */
 .off-canvas-wrap .main-section:-webkit-scrollbar {
   display: none;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 1628, ../scss/_settings.scss */
+  /* line 1643, ../scss/_settings.scss */
   body, html {
     height: 100%;
     width: 100%;
   }
 
-  /* line 1632, ../scss/_settings.scss */
+  /* line 1647, ../scss/_settings.scss */
   .off-canvas-wrap, .inner-wrap {
     height: 100%;
   }
 
-  /* line 1636, ../scss/_settings.scss */
+  /* line 1651, ../scss/_settings.scss */
   .off-canvas-wrap .main-section {
     height: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 1644, ../scss/_settings.scss */
+/* line 1659, ../scss/_settings.scss */
 #loader {
   position: absolute;
   top: 50%;
@@ -212,7 +230,7 @@
   margin-top: -40px;
 }
 
-/* line 1654, ../scss/_settings.scss */
+/* line 1669, ../scss/_settings.scss */
 #loading_title {
   text-align: center;
   color: #50e3c2;
@@ -225,49 +243,55 @@
   z-index: 999;
 }
 
-/* line 1672, ../scss/_settings.scss */
+/* line 1686, ../scss/_settings.scss */
+#pic0 {
+  min-height: 400px;
+  background: url(0.jpg) no-repeat center;
+}
+
+/* line 1691, ../scss/_settings.scss */
 #pic1 {
   min-height: 400px;
   background: url(1.jpg) no-repeat center;
 }
 
-/* line 1677, ../scss/_settings.scss */
+/* line 1696, ../scss/_settings.scss */
 #pic2 {
   min-height: 400px;
   background: url(2.jpg) no-repeat center;
 }
 
-/* line 1681, ../scss/_settings.scss */
+/* line 1700, ../scss/_settings.scss */
 #pic3 {
   min-height: 400px;
   background: url(3.jpg) no-repeat center;
 }
 
-/* line 1685, ../scss/_settings.scss */
+/* line 1704, ../scss/_settings.scss */
 #pic4 {
   min-height: 400px;
   background: url(4.jpg) no-repeat center;
 }
 
-/* line 1689, ../scss/_settings.scss */
+/* line 1708, ../scss/_settings.scss */
 #pic5 {
   min-height: 400px;
   background: url(5.jpg) no-repeat center;
 }
 
-/* line 1693, ../scss/_settings.scss */
+/* line 1712, ../scss/_settings.scss */
 #pic6 {
   min-height: 400px;
   background: url(6.jpg) no-repeat center;
 }
 
-/* line 1697, ../scss/_settings.scss */
+/* line 1716, ../scss/_settings.scss */
 #pic7 {
   min-height: 400px;
   background: url(7.jpg) no-repeat center;
 }
 
-/* line 1701, ../scss/_settings.scss */
+/* line 1720, ../scss/_settings.scss */
 #pic8 {
   min-height: 400px;
   background: url(8.jpg) no-repeat center;
