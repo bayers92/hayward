@@ -13,6 +13,11 @@
 	<script src="bower_components/modernizr/modernizr.js"></script>
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="js/instafeed.min.js"></script>
+
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.2/fotorama.css" rel="stylesheet"> <!-- 3 KB -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.2/fotorama.js"></script> <!-- 16 KB -->
+
+
 	<!-- Google Analytics -->
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -25,366 +30,252 @@
 
 	</script>
 	<!-- LOADING GRAPHIC PAGE -->
-	<style>
-		/* This only works with JavaScript, 
-		if it's not present, don't show loader */
-		.no-js #loading_page { display: none;  }
-		.js .loading_page { display: block; background-color: white; position: absolute; left: 0px; top: 0px; height: 100%; width: 100%; z-index: 99999;}
-		</style>
 
-		<script>
-		// Wait for window load
-		$(window).load(function() {
-				// Animate loader off screen
-				$("#loading_page").delay(2000).animate({
-					top: -1000
-				}, 400);
-			});
-		</script>	
+	<script>
+	// Wait for window load
+	$(window).load(function() {
+			// Animate loader off screen
+			$("#loading_page").delay(2000).animate({
+				top: -1000
+			}, 400);
+		});
+	</script>	
 
-	</head>
-	<body>
+</head>
+<body>
+	<div class = "loading_page" id ="loading_page">
+		<h3 id = "loading_title"> Timothy Hayward </h3>
+		<img src="img/preloader.gif" id="loader">
+	</div>
 
-		<div class = "loading_page" id ="loading_page">
-			<h3 id = "loading_title"> Timothy Hayward </h3>
-			<img src="img/preloader.gif" id="loader">
+	<!-- START HOMEPAGE -->
+	<div class = "full-page show-for-medium-up">
+		<div class = "bg"></div>
+		<div class = "home-title">
+			<a href="#about">
+				<h1>Timothy Hayward</h1>
+				<h3>Competitive and Organizational Strategy</h3>
+			</a>
+			<div class = "arrow"><a href="#about"><i class="fa fa-angle-double-down fa-4x"></i></a> </div>
 		</div>
+	</div>
+	<!-- END HOMEPAGE -->
 
-		<!-- START HOMEPAGE -->
-		<div class = "full-page show-for-medium-up">
-			<div class = "bg"></div>
-			<div class = "home-title">
-				<a href="#about">
-					<h1>Timothy Hayward</h1>
-					<h3>Competitive and Organizational Strategy</h3>
-				</a>
-				<div class = "arrow"><a href="#about"><i class="fa fa-angle-double-down fa-4x"></i></a> </div>
+	<div class="off-canvas-wrap fixed" data-offcanvas>
+		<div class="inner-wrap">
+
+			<!-- MOBILE NAVIGATION BAR -->
+			<div class = "fixed">
+				<nav class="tab-bar show-for-small-only">
+					<section class="left-small">
+						<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+					</section>
+
+					<section class="middle tab-bar-section">
+						<h1 class="title">Timothy Hayward</h1>
+					</section>
+				</nav>
 			</div>
-		</div>
-		<!-- END HOMEPAGE -->
 
-		<div class="off-canvas-wrap fixed" data-offcanvas>
-			<div class="inner-wrap">
+			<!-- MOBILE NAVIGATION OFFCANVAS LIST -->
+			<aside class="left-off-canvas-menu" aria-hidden="true">
+				<ul class="off-canvas-list">
+					<li><label>Timothy Hayward</label></li>
+					<li><a href="#about"><i class="fa fa-user fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;About</a></li>
+					<li><a href="#travel"><i class="fa fa-plane fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;World Travel</a></li>
+					<li><a href="#blog"><i class="fa fa-comment fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Blog</a></li>
+					<li><a href="mailto:Timothy.Hayward@Simon.Rochester.edu"><i class="fa fa-envelope-o fa-1x"></i>&nbsp;&nbsp;&nbsp;&nbsp;Contact</a></li>
+				</ul>
+			</aside>
+			<!-- END MOBILE NAV OFFCANVAS -->
 
-				<!-- MOBILE NAVIGATION BAR -->
-				<div class = "fixed">
-					<nav class="tab-bar show-for-small-only">
-						<section class="left-small">
-							<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-						</section>
+			<section class="main-section">
+				<div class = "show-for-medium-up">
 
-						<section class="middle tab-bar-section">
-							<h1 class="title">Timothy Hayward</h1>
-						</section>
-					</nav>
+					<!-- START DESKTOP NAVIGATION -->
+					<div data-magellan-expedition="fixed">
+						<dl class="sub-nav">
+							<dd data-magellan-arrival="about"><a href="#about">About</a></dd>
+							<dd data-magellan-arrival="travel"><a href="#travel">World Travel</a></dd>
+							<dd data-magellan-arrival="blog"><a href="#blog">Blog</a></dd>
+						</dl>
+					</div>
 				</div>
+				<!-- END NAVIGATION -->
 
-				<!-- MOBILE NAVIGATION OFFCANVAS LIST -->
-				<aside class="left-off-canvas-menu" aria-hidden="true">
-					<ul class="off-canvas-list">
-						<li><label>Timothy Hayward</label></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#travel">World Travel</a></li>
-						<li><a href="#blog">Blog</a></li>
-					</ul>
-				</aside>
-				<!-- END MOBILE NAV OFFCANVAS -->
+				<!-- START ABOUT SECTION -->
 
-				<section class="main-section">
-					<div class = "show-for-medium-up">
-
-						<!-- START DESKTOP NAVIGATION -->
-						<div data-magellan-expedition="fixed">
-							<dl class="sub-nav">
-								<dd data-magellan-arrival="about"><a href="#about">About</a></dd>
-								<dd data-magellan-arrival="travel"><a href="#travel">World Travel</a></dd>
-								<dd data-magellan-arrival="blog"><a href="#blog">Blog</a></dd>
-							</dl>
+				<div class ="content section">
+					<a name="about" data-magellan-destination="about"></a>
+					<div class = "row">
+						<div class = "small-12 small-cenetered columns">
+							<h3 class = "header"> About </h3>
 						</div>
 					</div>
-					<!-- END NAVIGATION -->
-
-					<!-- START ABOUT SECTION -->
-
-					<div class ="content section">
-						<a name="about" data-magellan-destination="about"></a>
-						<div class = "row">
-							<div class = "small-12 small-cenetered columns">
-								<h3 class = "header"> About </h3>
-							</div>
-						</div>
-						<div class = "row">
-							<div class = "small-12 small-centered columns">
-								<div class = "pic">
-									<img src="img/about.jpg">
-								</div>
-							</div>
-						</div>
-
-						<div class = "row">
-							<div class ="small-12 small-centered columns">
-								<p>I am currently an MBA student on a merit based full scholarship at the <a href="http://www.simon.rochester.edu/index.aspx">Simon School of Business </a>at the University of Rochester. Given my MBA and background in economics and commercial litigation I have cultivated a unique set of leadership and problem solving skills that are relevant and transferrable to the fields of business management and management consulting.</p>
-							</div>
-						</div>
-
-						<div class = "row">
-							<div class = "small-12 small-centered columns">
-								<a href = "Timothy_Hayward_Resume.pdf"><i class="fa fa-paperclip fa-2x"></i> &nbsp; View Full Resume </a><br/><br/>
-							</div>
-						</div>
-
-						<div class = "row">
-							<div class = "small-12 small-centered columns">
-
-								<h3> Education </h3>
-
-								<div class = "larger-text"> Simon School University of Rochester (2016)</div>
-								<div class = "smaller-text">
-									&nbsp; <em> Master of Business Administration </em> <br/>
-								</div>
-
-								<div class = "larger-text"> University of Antwerp (2011)</div>
-								<div class = "smaller-text">
-									&nbsp; <em> International European Legal Studies Program </em> <br/>
-								</div>
-
-								<div class = "larger-text"> Stellenbosch University (2011)</div>
-								<div class = "smaller-text">
-									&nbsp; <em> Bachelor of Laws </em> <br/>
-								</div>
-
-								<div class = "larger-text"> Stellenbosch University (2008)</div>
-								<div class = "smaller-text">
-									&nbsp; <em> Bachelor of Commerce </em> <br/>
-								</div>
-								<br/>
-
-
-								<h3> Experience </h3>
-
-								<div class = "larger-text"> C&A Friedlander Inc. (2011 – 2013)</div>
-								<div class = "smaller-text">
-									&nbsp; <em> Associate, Litigation Department </em> <br/>
-									&nbsp; <em> Candidate Attorney, Litigation Department </em> <br/>
-								</div>
-								<br/>
-
-								<h3> Leadership Positions </h3>
-
-								<div class = "larger-text"> William E. Simon Leadership Fellow </div>
-								<div class = "smaller-text">
-									&nbsp; <em> Simon Leadership Fellowships are offered to full-time MBA candidates who exhibit outstanding academic and professional credentials, and who have an interest in making a significant impact in the world around them. Simon Fellows are highly dedicated individuals active in the pursuit of economic business knowledge as well as the development of critical leadership skills. </em> <br/>
-								</div>
-
-								<div class = "larger-text"> Elected member of the Graduate Business Council </div>
-								<div class = "smaller-text">
-									&nbsp; <em> The purpose of the peer-elected GBC is to represent the interests of the graduate student body and foster a strong sense of community within Simon Business School.</em> <br/>
-								</div>
-
-
-								<div class = "larger-text"> Simonsberg Metropolitan Committee Member </div>
-								<div class = "smaller-text">
-									&nbsp; <em> The Simonsberg Metropolitan, established in 1963, is revered as the oldest event on the Stellenbosch social calendar and is a celebration of all that Simonsberg has to offer: sport, tradition, festivity and spirit. </em> <br/>
-								</div>
-
-
-								<div class = "larger-text"> Team Captain - Cricket </div>
+					<div class = "row">
+						<div class = "small-12 small-centered columns">
+							<div class = "pic">
+								<img src="img/about.jpg">
 							</div>
 						</div>
 					</div>
-					<!-- END ABOUT SECTION	 -->
+
+					<div class = "row">
+						<div class ="small-12 small-centered columns">
+							<p>I am currently an MBA student on a merit based full scholarship at the <a href="http://www.simon.rochester.edu/index.aspx">Simon School of Business </a>at the University of Rochester. Given my MBA and background in economics and commercial litigation I have cultivated a unique set of leadership and problem solving skills that are relevant and transferrable to the fields of business management and management consulting.</p>
+						</div>
+					</div>
+
+					<div class = "row">
+						<div class = "small-12 small-centered columns">
+							<a href = "Timothy_Hayward_Resume.pdf"><i class="fa fa-paperclip fa-2x"></i> &nbsp; View Full Resume </a><br/><br/>
+						</div>
+					</div>
+
+					<div class = "row">
+						<div class = "small-12 small-centered columns">
+
+							<h3> Education </h3>
+
+							<div class = "larger-text"> Simon School University of Rochester (2016)</div>
+							<div class = "smaller-text">
+								&nbsp; <em> Master of Business Administration </em> <br/>
+							</div>
+
+							<div class = "larger-text"> University of Antwerp (2011)</div>
+							<div class = "smaller-text">
+								&nbsp; <em> International European Legal Studies Program </em> <br/>
+							</div>
+
+							<div class = "larger-text"> Stellenbosch University (2011)</div>
+							<div class = "smaller-text">
+								&nbsp; <em> Bachelor of Laws </em> <br/>
+							</div>
+
+							<div class = "larger-text"> Stellenbosch University (2008)</div>
+							<div class = "smaller-text">
+								&nbsp; <em> Bachelor of Commerce </em> <br/>
+							</div>
+							<br/>
+
+
+							<h3> Experience </h3>
+
+							<div class = "larger-text"> C&A Friedlander Inc. (2011 – 2013)</div>
+							<div class = "smaller-text">
+								&nbsp; <em> Associate, Litigation Department </em> <br/>
+								&nbsp; <em> Candidate Attorney, Litigation Department </em> <br/>
+							</div>
+							<br/>
+
+							<h3> Leadership Positions </h3>
+
+							<div class = "larger-text"> William E. Simon Leadership Fellow </div>
+							<div class = "smaller-text">
+								&nbsp; <em> Simon Leadership Fellowships are offered to full-time MBA candidates who exhibit outstanding academic and professional credentials, and who have an interest in making a significant impact in the world around them. Simon Fellows are highly dedicated individuals active in the pursuit of economic business knowledge as well as the development of critical leadership skills. </em> <br/>
+							</div>
+
+							<div class = "larger-text"> Elected member of the Graduate Business Council </div>
+							<div class = "smaller-text">
+								&nbsp; <em> The purpose of the peer-elected GBC is to represent the interests of the graduate student body and foster a strong sense of community within Simon Business School.</em> <br/>
+							</div>
+
+
+							<div class = "larger-text"> Simonsberg Metropolitan Committee Member </div>
+							<div class = "smaller-text">
+								&nbsp; <em> The Simonsberg Metropolitan, established in 1963, is revered as the oldest event on the Stellenbosch social calendar and is a celebration of all that Simonsberg has to offer: sport, tradition, festivity and spirit. </em> <br/>
+							</div>
+
+
+							<div class = "larger-text"> Team Captain - Cricket </div>
+						</div>
+					</div>
+				</div>
+				<!-- END ABOUT SECTION	 -->
 
 
 
-					<!-- START TRAVEL SECTION -->
-					<div class = "content section">
-						<a name = "travel" data-magellan-destination="travel"></a>
-						<div class = "row">
-							<div class = "small-12 small-centered columns">
-								<h3 class = "center-text header"> World Travel </h3>
-							</div>
+				<!-- START TRAVEL SECTION -->
+				<div class = "content section">
+					<a name = "travel" data-magellan-destination="travel"></a>
+					<div class = "row">
+						<div class = "small-12 small-centered columns">
+							<h3 class = "center-text header"> World Travel </h3>
 						</div>
-						<div class = "row">
-							<div class = "small-12 small-centered columns">
-								<p> As the son of a pilot I was fortunate enough to have the opportunity to travel to different parts of the world from a young age. My family encouraged my passion to fully engage with local cultures wherever I found myself. This allowed me to broaden my horizons and catch glimpses of the world through other people’s eyes. These experiences instilled in me a love of traveling to different parts of the world to experience new cultures and to get to know individuals. I love meeting new people, whether it be a simple chat about a sporting event or a deep conversation about their life - making human connections and positive impacts on other people's lives is the most important thing to me.
-								</p> 
-							</div>
-							<br/><br/>
+					</div>
+					<div class = "row">
+						<div class = "small-12 small-centered columns">
+							<p> As the son of a pilot I was fortunate enough to have the opportunity to travel to different parts of the world from a young age. My family encouraged my passion to fully engage with local cultures wherever I found myself. This allowed me to broaden my horizons and catch glimpses of the world through other people’s eyes. These experiences instilled in me a love of traveling to different parts of the world to experience new cultures and to get to know individuals. I love meeting new people, whether it be a simple chat about a sporting event or a deep conversation about their life - making human connections and positive impacts on other people's lives is the most important thing to me.
+							</p> 
 						</div>
+						<br/><br/>
+					</div>
 
-						<div class = "row">
-							<div class ="small-12 medium-7 columns" id ="pic1">
-								<img src="1.jpg" style="visibility:hidden"/>
-							</div>
-							<div class = "small-12 medium-5 columns" id ="pic2">
-								<img src="2.jpg" style="visibility:hidden"/>
-							</div>
-						</div>
-						<div class = "row">
-							<div class ="small-12 medium-5 columns" id ="pic3">
-								<img src="3.jpg" style="visibility:hidden"/>
-							</div>
-							<div class = "small-12 medium-7 columns" id ="pic4">
-								<img src="4.jpg" style="visibility:hidden"/>
+					<div class = "row">
+						<div class = "small-12 columns text-center">
+							<div class="fotorama" data-nav="thumbs">
+								<img src="img/1.jpg" data-fit="contain">
+								<img src="img/2.jpg" data-fit="contain">
+								<img src="img/3.jpg" data-fit="contain">
+								<img src="img/4.jpg" data-fit="contain">
+								<img src="img/5.jpg" data-fit="contain">
+								<img src="img/6.jpg" data-fit="contain">
+								<img src="img/7.jpg" data-fit="contain">
+								<img src="img/8.jpg" data-fit="contain">
 							</div>
 						</div>
-						<div class = "row">
-							<div class = "small-12 columns" id = "pic5">
-								<img src="5.jpg" style="visibility:hidden"/>
-							</div>
-						</div>
-						<div class = "row">
-							<div class ="small-12 medium-7 columns" id ="pic6">
-								<img src="6.jpg" style="visibility:hidden"/>
-							</div>
-							<div class = "small-12 medium-5 columns" id ="pic7">
-								<img src="7.jpg" style="visibility:hidden"/>
-							</div>
-						</div>
-						<div class = "row">
-							<div class = "small-12 columns" id = "pic8">
-								<img src="8.jpg" style="visibility:hidden"/>
-							</div>
-						</div>
+					</div>
+				</div>
+				<!-- END TRAVEL SECTION -->
 
-
-
-<!-- 						<div class = "row">
+				<!-- START BLOG SECTION -->
+				<div class = "content section">
+					<a name = "blog" data-magellan-destination="blog"></a>
+					<div class = "row">
+						<div class = "small-12 small-centered columns center-text">
+							<h3> Blog </h3>
+						</div>
+						<div class = "small-12 small-centered columns">
+							<h5 class = "header center-text"> Some of my favorite articles from around the web </h5>
+						</div>
+					</div>
+					<div class = "row">
+						<div class = "small-12 small-centered columns">
 							<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-								<li> 
-									<div class = "project_box">
-										<div class = "pic">
-											<img src="img/vietnam.jpg">
-										</div>
-										<div class = "description">
-											Vietnam
-										</div>
-									</div>
-								</li>
-								<li>
-									<div class = "project_box">
-										<div class = "pic">
-											<img src="img/pwf.png">
-										</div>
-										<div class = "description">
-											Zimbabwe
-										</div>
-									</div>
-								</li>
-
-								<li>
-									<div class = "project_box">
-										<div class = "pic">
-											<img src="img/rnaseq.png">
-										</div>
-										<div class = "description">
-											Mozambique
-										</div>
-									</div>
-								</li>
-
-								<li>
-									<div class = "project_box">
-										<div class = "pic">
-											<img src="img/brandclub.png">
-										</div>
-										<div class = "description">
-											Mauritius
-										</div>
-									</div>
-								</li>
-
-								<li>
-									<div class = "project_box">
-										<div class = "pic">
-											<img src="img/aunp.png">
-										</div>
-										<div class = "description">
-											Tanzania
-										</div>
-									</div>
-								</li>
-
-								<li>
-									<div class = "project_box">
-										<div class = "pic">
-											<img src="img/porter.png">
-										</div>
-										<div class = "description">
-											Namibia
-										</div>
-									</div>
-								</li>
-
-								<li>
-									<div class = "project_box">
-										<div class = "pic">
-											<img src="img/porter.png">
-										</div>
-										<div class = "description">
-											Belgium
-										</div>
-									</div>
-								</li>
-
-								<li>
-									<div class = "project_box">
-										<div class = "pic">
-											<img src="img/porter.png">
-										</div>
-										<div class = "description">
-											Scandinavia 
-										</div>
-									</div>
-								</li>
+								<script type="text/javascript" src="http://timothyhayward.tumblr.com/js"></script>
 							</ul>
 						</div>
--->					</div>
-					<!-- END TRAVEL SECTION -->
-
-					<!-- START BLOG SECTION -->
-					<div class = "content section">
-						<a name = "blog" data-magellan-destination="blog"></a>
-						<div class = "row">
-							<div class = "small-12 small-centered columns center-text">
-								<h3> Blog </h3>
-							</div>
-							<div class = "small-12 small-centered columns">
-								<h5 class = "header center-text"> Some of my favorite articles from around the web </h5>
-							</div>
+					</div>
+					<div class = "row">
+						<div class = "small-12 small-centered columns center-text">
+							<p> <a href="http://timothyhayward.tumblr.com/"> View full blog.. </a> </p>
 						</div>
-						<ul class="small-block-grid-1 medium-block-grid-2 large-block-grid-3">
-							<script type="text/javascript" src="http://timothyhayward.tumblr.com/js"></script>
-						</ul>
-						<div class = "row">
-							<div class = "small-12 small-centered columns center-text">
-								<p> <a href="http://timothyhayward.tumblr.com/"> View full blog.. </a> </p>
+					</div>
+				</div>
+				<!-- END BLOG SECTION -->
+
+
+				<!-- START FOOTER SECTION -->
+				<div class = "footer section">
+					<div class = "row">
+						<div class = "small-12 large-4 small-centered columns">
+							<div class = "icons">
+								<a href="mailto:Timothy.Hayward@Simon.Rochester.edu"><i class="fa fa-envelope-o fa-1x"></i></a>
+								<a href="https://www.facebook.com/tim.hayward.921"><i class="fa fa-facebook fa-1x"></i></a>
+								<a href="www.linkedin.com/in/timothyhayward"><i class="fa fa-linkedin fa-1x"></i></a>
 							</div>
 						</div>
 					</div>
-					<!-- END BLOG SECTION -->
+				</div>
+				<!-- END FOOTER SECTION -->
+			</section> 
+			<!-- END MAIN SECTION -->
+			<a class="exit-off-canvas"></a>
+		</div>
+		<!-- END OFF-CANVAS WRAP -->
+	</div>
 
-					<!-- START FOOTER SECTION -->
-					<div class = "footer section">
-						<div class = "row">
-							<div class = "small-12 large-4 small-centered columns">
-								<div class = "icons">
-									<a href="https://www.facebook.com/tim.hayward.921"><i class="fa fa-facebook fa-1x"></i></a>
-									<a href="www.linkedin.com/in/timothyhayward"><i class="fa fa-linkedin fa-1x"></i></a>
-									<a href="mailto:Timothy.Hayward@Simon.Rochester.edu"><i class="fa fa-envelope-o fa-1x"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- END FOOTER SECTION -->
-				</section> 
-				<!-- END MAIN SECTION -->
-				<a class="exit-off-canvas"></a>
-			</div>
-			<!-- END OFF-CANVAS WRAP -->
-
-			<script src="bower_components/foundation/js/foundation.min.js"></script>
-			<script src="js/app.js"></script>
-			<!-- // <script src="js/foundation/foundation.offcanvas.js"></script> -->
-		</body>
-		</html>
+	<script src="bower_components/foundation/js/foundation.min.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>

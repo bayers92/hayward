@@ -1683,41 +1683,44 @@ $menu-slide: "transform 500ms ease";
 // 	margin-bottom: 20px;
 // }
 
-#pic0 {
-	min-height: 400px;
-	background: url(0.jpg) no-repeat center; 
-}
+// #pic0 {
+// 	min-height: 400px;
+// 	background: url(0.jpg) no-repeat center; 
+// }
 
-#pic1 {
-	min-height: 400px;
-	background: url(1.jpg) no-repeat center; 
-}
+// #pic1 {
+// 	min-height: 400px;
+// 	background: url(1.jpg) no-repeat center; 
+// }
 
-#pic2 {
-	min-height: 400px;
-	background: url(2.jpg) no-repeat center; 
-}
-#pic3 {
-	min-height: 400px;
-	background: url(3.jpg) no-repeat center; 
-}
-#pic4 {
-	min-height: 400px;
-	background: url(4.jpg) no-repeat center; 
-}
-#pic5 {
-	min-height: 400px;
-	background: url(5.jpg) no-repeat center; 
-}
-#pic6 {
-	min-height: 400px;
-	background: url(6.jpg) no-repeat center; 
-}
-#pic7 {
-	min-height: 400px;
-	background: url(7.jpg) no-repeat center; 
-}
-#pic8 {
-	min-height: 400px;
-	background: url(8.jpg) no-repeat center; 
-}
+// #pic2 {
+// 	min-height: 400px;
+// 	background: url(2.jpg) no-repeat center; 
+// }
+// #pic3 {
+// 	min-height: 400px;
+// 	background: url(3.jpg) no-repeat center; 
+// }
+// #pic4 {
+// 	min-height: 400px;
+// 	background: url(4.jpg) no-repeat center; 
+// }
+// #pic5 {
+// 	min-height: 400px;
+// 	background: url(5.jpg) no-repeat center; 
+// }
+// #pic6 {
+// 	min-height: 400px;
+// 	background: url(6.jpg) no-repeat center; 
+// }
+// #pic7 {
+// 	min-height: 400px;
+// 	background: url(7.jpg) no-repeat center; 
+// }
+// #pic8 {
+// 	min-height: 400px;
+// 	background: url(8.jpg) no-repeat center; 
+// }
+
+.no-js #loading_page { display: none;  }
+.js .loading_page { display: block; background-color: white; position: absolute; left: 0px; top: 0px; height: 100%; width: 100%; z-index: 99999;}
