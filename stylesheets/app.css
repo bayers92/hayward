@@ -100,6 +100,18 @@
   height: 100%;
 }
 /* line 1542, ../scss/_settings.scss */
+.full-page .bg_overlay {
+  position: absolute;
+  z-index: -1000;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+/* line 1553, ../scss/_settings.scss */
 .full-page .home-title {
   top: 50%;
   /*left: 50%;*/
@@ -109,26 +121,22 @@
   height: 20%;
   margin-top: -10%;
   text-align: center;
-  color: white;
-}
-/* line 1552, ../scss/_settings.scss */
-.full-page .home-title h1, .full-page .home-title h3 {
-  font-weight: bold;
-  color: white;
-}
-/* line 1556, ../scss/_settings.scss */
-.full-page .home-title a {
-  color: white;
-}
-/* line 1558, ../scss/_settings.scss */
-.full-page .home-title a:hover {
   color: #50e3c2;
 }
-/* line 1562, ../scss/_settings.scss */
-.full-page .home-title .arrow {
-  color: white;
+/* line 1563, ../scss/_settings.scss */
+.full-page .home-title h1, .full-page .home-title h3 {
+  font-weight: bold;
+  color: #50e3c2;
 }
-/* line 1565, ../scss/_settings.scss */
+/* line 1567, ../scss/_settings.scss */
+.full-page .home-title a {
+  color: #50e3c2;
+}
+/* line 1569, ../scss/_settings.scss */
+.full-page .home-title a:hover {
+  color: #65cae0;
+}
+/* line 1573, ../scss/_settings.scss */
 .full-page .home-title .arrow:hover {
   -webkit-transition: 1s ease-in-out;
   -moz-transition: 1s ease-in-out;
@@ -141,12 +149,12 @@
   transform: translate(0, 1em);
   color: #50e3c2;
 }
-/* line 1577, ../scss/_settings.scss */
+/* line 1585, ../scss/_settings.scss */
 .full-page .home-title:hover {
   color: #50e3c2;
 }
 
-/* line 1587, ../scss/_settings.scss */
+/* line 1595, ../scss/_settings.scss */
 .tumblr_posts {
   width: 100%;
   position: relative;
@@ -159,7 +167,7 @@
   list-style: none;
   list-style-type: none;
 }
-/* line 1598, ../scss/_settings.scss */
+/* line 1606, ../scss/_settings.scss */
 .tumblr_posts li {
   width: 90%;
   margin-left: auto !important;
@@ -168,26 +176,26 @@
   padding-bottom: 25px !important;
   border-bottom: thin solid #c2c0c0;
 }
-/* line 1605, ../scss/_settings.scss */
+/* line 1613, ../scss/_settings.scss */
 .tumblr_posts li a {
   font-size: 1.6875rem;
   color: dimgray !important;
 }
-/* line 1608, ../scss/_settings.scss */
+/* line 1616, ../scss/_settings.scss */
 .tumblr_posts li a:hover {
   color: #50e3c2 !important;
 }
-/* line 1613, ../scss/_settings.scss */
+/* line 1621, ../scss/_settings.scss */
 .tumblr_posts li .tumblr_description .link_og_blockquote {
   border: none !important;
   color: #c2c0c0 !important;
   margin-bottom: 0px !important;
 }
-/* line 1618, ../scss/_settings.scss */
+/* line 1626, ../scss/_settings.scss */
 .tumblr_posts li .tumblr_description p {
   color: #c2c0c0;
 }
-/* line 1627, ../scss/_settings.scss */
+/* line 1635, ../scss/_settings.scss */
 .tumblr_posts li .tumblr_caption p {
   margin-top: 5px;
   color: #c2c0c0;
@@ -195,31 +203,31 @@
 }
 
 /* remove scroll bars in Safari */
-/* line 1637, ../scss/_settings.scss */
+/* line 1645, ../scss/_settings.scss */
 .off-canvas-wrap .main-section:-webkit-scrollbar {
   display: none;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 1643, ../scss/_settings.scss */
+  /* line 1651, ../scss/_settings.scss */
   body, html {
     height: 100%;
     width: 100%;
   }
 
-  /* line 1647, ../scss/_settings.scss */
+  /* line 1655, ../scss/_settings.scss */
   .off-canvas-wrap, .inner-wrap {
     height: 100%;
   }
 
-  /* line 1651, ../scss/_settings.scss */
+  /* line 1659, ../scss/_settings.scss */
   .off-canvas-wrap .main-section {
     height: 100%;
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
   }
 }
-/* line 1659, ../scss/_settings.scss */
+/* line 1667, ../scss/_settings.scss */
 #loader {
   position: absolute;
   top: 50%;
@@ -230,7 +238,7 @@
   margin-top: -40px;
 }
 
-/* line 1669, ../scss/_settings.scss */
+/* line 1677, ../scss/_settings.scss */
 #loading_title {
   text-align: center;
   color: #50e3c2;
@@ -243,12 +251,12 @@
   z-index: 999;
 }
 
-/* line 1725, ../scss/_settings.scss */
+/* line 1689, ../scss/_settings.scss */
 .no-js #loading_page {
   display: none;
 }
 
-/* line 1726, ../scss/_settings.scss */
+/* line 1690, ../scss/_settings.scss */
 .js .loading_page {
   display: block;
   background-color: white;
